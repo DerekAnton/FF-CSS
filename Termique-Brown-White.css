@@ -1,0 +1,139 @@
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+     
+    #appmenu-button-container,
+    #appmenu-toolbar-button {
+        display: none !important;
+    }
+     
+     
+         
+        /*bars*/
+         
+        /*notificationbox {
+            overflow-x: hidden;
+        }
+        browser[type="content-primary"], browser[type="content-targetable"] {
+            overflow-y: scroll;
+            margin-right: -15px;
+        }*/
+         
+        /* hide */
+        #identity-box,
+        #urlbar-icons > image,
+        #urlbar-container dropmarker,
+        #appmenu-button .button-text,
+        #appmenu-button .button-menu-dropmarker
+        {
+            display:none!important;
+        }
+        #menubar,
+        #statusbar,
+        #toolbox,
+        #toolbar, .tabbrowser-tabs, .searchbar, .toolbarbutton,
+        #titlebar-buttonbox-container,
+        #findbar,
+        #toolbox-container,
+        #toolbar-container,
+        #sidebarheader        
+        {
+            background:#362e24!important;
+        }
+        #urlbar,
+        #urlbar-container,
+        #bookmarkstoolbar,
+        #bookmarkstoolbar-container
+        {
+          background:#d0d0d0!important;
+          border-style: none !important;
+          -moz-appearance: none !important;
+        }
+         
+        #main
+        {
+                background:#d0d0d0!important;
+                -moz-appearance: none !important;
+        }
+         
+       
+        /* tabs */
+        #main-window #tabbrowser-tabs tab
+        {
+            font-family:"lime"!important;
+            border:0px!important;
+            font-size: 9pt !important;
+            background:#362e24!important;
+            color:#ffffff!important;
+            -moz-appearance: none !important;
+        }
+         
+        #main-window[sizemode="maximized"] #tabbrowser-tabs tab,
+        #main-window[sizemode="fullscreen"] #tabbrowser-tabs tab,
+        #main-window[sizemode="normal"] #tabbrowser-tabs tab
+        {
+            border-left:0px solid #362e24!important;
+            border-top:0px solid #362e24!important;
+            border-right:0px solid #362e24!important;
+            margin:0px 0px 0!important;
+            max-height:6px!important;
+            padding-left:0px!important;
+            padding-top:0px!important;
+            padding-bottom:0px!important;
+            border-radius:0 0 0px 0px!important;
+            -moz-appearance: none !important;
+        }
+        #main-window #tabbrowser-tabs tab[selected]
+        {
+            font-family:"lime"!important;
+            border:0px!important;
+            font-weight:regular!important;
+            font-size: 9pt !important;
+            background:#695a46!important;
+            color:#ffffff!important;
+        }
+        #main-window #tabbrowser-tabs tab .tab-throbber,
+        #main-window #tabbrowser-tabs tab .tab-icon-image
+        {
+            max-height:10px!important;
+            max-width:10px!important;
+            margin-top:0px!important;
+        }
+        #main-window #tabbrowser-tabs tab[fadein]
+        {
+            -moz-transition:all .2s ease-in-out!important;
+        }
+        #main-window #tabbrowser-tabs tab:not([selected]):hover
+       {
+            background:#695a46!important;
+        }
+        #main-window #tabbrowser-tabs tab[fadein]:not([pinned])
+        {
+            min-width:50px!important;
+            max-width:150px!important;
+        }
+        #main-window #tabbrowser-tabs tab[pinned]
+        {
+            max-width:24px!important;
+            min-width:24px!important;
+        }
+        #main-window #tabbrowser-tabs .scrollbutton-up,
+        #main-window #tabbrowser-tabs .scrollbutton-down,
+        #main-window #tabbrowser-tabs tab .tab-close-button,
+        #main-window #tabbrowser-tabs tab[pinned] .tab-close-button,
+        #main-window #tabbrowser-tabs tab .tab-icon-image
+        {
+            display:none!important;
+        }
+         
+         .tabbrowser-tab {
+      text-align: center !important;
+     
+      height: 20px !important;
+     
+      min-height: 20px !important;
+     
+      max-height: 20px !important;
+    }
+
+#urlbar-container { 
+min-width: 100px !important;
+max-width: 150px !important; }
